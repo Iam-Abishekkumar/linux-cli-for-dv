@@ -1,0 +1,25 @@
+name: regression
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Tool versions
+        run: |
+          bash --version | head -n 1
+          sort --version | head -n 1
+          sed --version | head -n 1
+          awk -W version 2>&1 | head -n 1
+
+      - name: Make sure killall is available (psmisc)
+        run: command -v killall || (sudo apt-get update && sudo apt-get install -y psmisc)
+
+      - name: Run regression
+        run: ./run_regression.sh

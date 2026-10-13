@@ -1,0 +1,10 @@
+## Task 1: Find all sleep processes.
+sleep 500
+sleep 600
+sleep 700
+## Task 2: Count them.
+3
+## Task 3: Kill one process.
+2
+## Task 4: Kill all sleep processes.
+0

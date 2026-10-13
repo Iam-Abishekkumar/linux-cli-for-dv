@@ -1,0 +1,11 @@
+## Task 1: Show only students who passed.
+John Passed
+Alex Passed
+Sarah Passed
+## Task 2: Show only students who failed.
+Mary Failed
+David Failed
+## Task 3: Count how many students passed.
+3
+## Task 4: Count the total lines in the file.
+5

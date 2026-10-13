@@ -1,0 +1,14 @@
+## Task 1: Count total ERROR entries.
+3
+## Task 2: Show only WARNING lines.
+WARNING Low Memory
+## Task 3: Display the last 3 lines.
+WARNING Low Memory
+ERROR Timeout
+INFO Logout
+## Task 4: Display line numbers with ERROR messages.
+2:ERROR Database Failed
+4:ERROR Connection Lost
+6:ERROR Timeout
+## Task 5: Count total INFO entries.
+3

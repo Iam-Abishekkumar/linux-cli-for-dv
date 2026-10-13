@@ -1,0 +1,20 @@
+## Task 1: Sort the names.
+Alex
+Alex
+Alex
+David
+John
+John
+Mary
+## Task 2: Remove duplicates.
+Alex
+David
+John
+Mary
+## Task 3: Count each name's occurrences.
+      3 Alex
+      1 David
+      2 John
+      1 Mary
+## Task 4: Display the most frequent name using a pipeline.
+Alex

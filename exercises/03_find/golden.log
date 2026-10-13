@@ -1,0 +1,11 @@
+## Task 1: Find all .txt files.
+./testdir/file1.txt
+./testdir/file2.txt
+## Task 2: Find all .log files.
+./testdir/logs/app.log
+./testdir/logs/error.log
+## Task 3: Count the total number of files.
+4
+## Task 4: Find only directories.
+./testdir
+./testdir/logs

@@ -1,0 +1,35 @@
+# ------------------------------------------------------------
+# test: axi_burst_test   seed: 1234   build: tb_axi_top
+# ------------------------------------------------------------
+UVM_INFO @ 0: reporter [RNTST] Running test axi_burst_test...
+UVM_INFO /home/dv/tb/env/axi_env.sv(42) @ 0: uvm_test_top.env [ENV] Building agents: master=1 slave=1
+UVM_INFO /home/dv/tb/seq/axi_burst_seq.sv(57) @ 120: uvm_test_top.env.mst_agt.sqr@@burst_seq [SEQ] Starting INCR burst len=8 addr=0x1000
+UVM_INFO /home/dv/tb/env/axi_scoreboard.sv(88) @ 1250: uvm_test_top.env.sb [SB] WRITE addr=0x1000 data=0xdeadbeef matched
+UVM_INFO /home/dv/tb/env/axi_scoreboard.sv(88) @ 1270: uvm_test_top.env.sb [SB] WRITE addr=0x1004 data=0x0000abcd matched
+UVM_WARNING /home/dv/tb/agent/axi_monitor.sv(131) @ 2010: uvm_test_top.env.mst_agt.mon [MON_STALL] RVALID held low for 64 cycles
+UVM_ERROR /home/dv/tb/env/axi_scoreboard.sv(112) @ 3400: uvm_test_top.env.sb [SB_MISMATCH] READ addr=0x1004 exp=0x0000abcd act=0x0000abce
+UVM_INFO /home/dv/tb/env/axi_scoreboard.sv(88) @ 3420: uvm_test_top.env.sb [SB] READ addr=0x1000 data=0xdeadbeef matched
+UVM_ERROR /home/dv/tb/env/axi_scoreboard.sv(112) @ 3460: uvm_test_top.env.sb [SB_MISMATCH] READ addr=0x1008 exp=0x12345678 act=0x12345679
+UVM_ERROR /home/dv/tb/agent/axi_monitor.sv(204) @ 3900: uvm_test_top.env.mst_agt.mon [AXI_RESP] Unexpected BRESP=SLVERR for awid=3
+UVM_INFO /home/dv/tb/seq/axi_burst_seq.sv(71) @ 4000: uvm_test_top.env.mst_agt.sqr@@burst_seq [SEQ] Burst sequence complete
+UVM_ERROR /home/dv/tb/env/axi_scoreboard.sv(112) @ 4480: uvm_test_top.env.sb [SB_MISMATCH] READ addr=0x100c exp=0x0badf00d act=0x0badf00c
+UVM_INFO /home/dv/tb/env/axi_scoreboard.sv(140) @ 5000: uvm_test_top.env.sb [SB] Checked 6 transactions, 3 mismatches
+UVM_INFO /home/dv/uvm/src/base/uvm_objection.svh(1276) @ 5000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    9
+UVM_WARNING :    1
+UVM_ERROR :    4
+UVM_FATAL :    0
+** Report counts by id
+[AXI_RESP]     1
+[ENV]     1
+[MON_STALL]     1
+[RNTST]     1
+[SB]     4
+[SB_MISMATCH]     3
+[SEQ]     2
+[TEST_DONE]     1
+$finish at simulation time 5000

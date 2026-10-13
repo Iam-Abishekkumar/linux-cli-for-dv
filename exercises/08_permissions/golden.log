@@ -1,0 +1,8 @@
+## Task 1: Give the owner full permissions only.
+-rwx------ 700 secret.txt
+## Task 2: Give everyone read permission.
+-rwxr--r-- 744 secret.txt
+## Task 3: Remove write permission for group and others.
+-rwxr--r-- 744 secret.txt
+## Task 4: Make the file executable only for the owner.
+-rwxr--r-- 744 secret.txt

@@ -1,0 +1,16 @@
+## Task 1: Display only names.
+John
+Mary
+Alex
+Sarah
+## Task 2: Display only marks.
+85
+92
+70
+95
+## Task 3: Show students scoring above 80.
+John
+Mary
+Sarah
+## Task 4: Calculate total marks.
+342
