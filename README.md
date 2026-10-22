@@ -4,6 +4,7 @@
 
 10 hands-on Linux exercises plus a mini challenge (45 tasks) on `grep`, `sort`, `uniq`, `find`, `cut`, `sed`, `awk`, processes and permissions,
 solved and **checked the way a verification team checks RTL**: every solution is re-run on each push and compared against a golden output.
+Plus **10 practice problems with no answers** that check themselves: solve them here, or fork the repo and solve them yourself.
 
 Day-to-day DV work is mostly reading text: triaging thousands of lines of simulation output, finding which seed failed,
 counting `UVM_ERROR`s across a regression. These are the commands that do that job.
@@ -43,6 +44,36 @@ counting `UVM_ERROR`s across a regression. These are the commands that do that j
 
 Each folder has the problem, the commands, their real output and a short **debug notes** section on what went wrong first.
 
+## Practice problems: no answers, solve them yourself
+
+<!-- practice-progress -->**Practice: 0 / 10 solved**<!-- /practice-progress -->
+
+| # | Problem | Commands | Level | Status |
+|---|---|---|---|---|
+| p01 | [grep: beyond the basics](practice/p01_grep_more/) | `grep` `cut` | Easy | ⬜ to do |
+| p02 | [head and tail: slicing a file](practice/p02_head_tail/) | `head` `tail` | Easy | ⬜ to do |
+| p03 | [Redirection and tee](practice/p03_redirection/) | `>` `>>` `2>` `tee` | Easy | ⬜ to do |
+| p04 | [tr and wc: changing characters](practice/p04_tr_wc/) | `tr` `wc` | Easy | ⬜ to do |
+| p05 | [CSV data: cut, sort and uniq](practice/p05_csv/) | `tail` `cut` `sort` `uniq` `awk` | Medium | ⬜ to do |
+| p06 | [sed: cleaning up a config file](practice/p06_sed_config/) | `sed` `grep` `wc` | Medium | ⬜ to do |
+| p07 | [awk: totals per group](practice/p07_awk_totals/) | `awk` `sort` `head` | Medium | ⬜ to do |
+| p08 | [find: acting on what you find](practice/p08_find_actions/) | `find` `wc` | Medium | ⬜ to do |
+| p09 | [Comparing files: diff and comm](practice/p09_diff_comm/) | `diff` `comm` `sort` `wc` | Harder | ⬜ to do |
+| p10 | [Final challenge: regression report](practice/p10_regression_report/) | any of the above | Harder | ⬜ to do |
+
+Each folder has the input, the tasks, an empty `solution.sh` and the expected output (`golden.log`).
+Write your commands in `solution.sh`, then `./run_regression.sh p01` shows PASS or the lines that differ.
+
+## Practise it yourself
+
+1. Click **Fork** (top right) to get your own copy, then clone it:
+   `git clone https://github.com/<you>/linux-cli-for-dv.git && cd linux-cli-for-dv`
+2. `./fresh_start.sh` empties every practice `solution.sh` (removes my answers), so all 10 problems are to do.
+3. Solve one: `cd practice/p01_grep_more`, read `README.md`, `vim solution.sh`, `../../run_regression.sh p01`
+4. Commit and push your progress. In your fork, open the **Actions** tab once and enable workflows so CI checks it.
+
+The 11 exercises in `exercises/` are my worked solutions with notes: read them to learn, then practise in `practice/`.
+
 ## Run the regression
 
 ```console
@@ -61,11 +92,22 @@ TEST                               RESULT
 09_pipelines                       PASS
 10_log_analysis                    PASS
 11_mini_challenge_sales            PASS
+p01_grep_more                      TODO  5 of 5 tasks left: edit solution.sh
+p02_head_tail                      TODO  5 of 5 tasks left: edit solution.sh
+p03_redirection                    TODO  5 of 5 tasks left: edit solution.sh
+p04_tr_wc                          TODO  5 of 5 tasks left: edit solution.sh
+p05_csv                            TODO  5 of 5 tasks left: edit solution.sh
+p06_sed_config                     TODO  5 of 5 tasks left: edit solution.sh
+p07_awk_totals                     TODO  5 of 5 tasks left: edit solution.sh
+p08_find_actions                   TODO  5 of 5 tasks left: edit solution.sh
+p09_diff_comm                      TODO  5 of 5 tasks left: edit solution.sh
+p10_regression_report              TODO  6 of 6 tasks left: edit solution.sh
 ------------------------------------------
-REGRESSION PASSED  11/11 tests
+REGRESSION PASSED  11 / 11 exercises  ·  practice: 0 solved, 10 to do
 ```
 
-Run one exercise with `./run_regression.sh 07`.
+Run one exercise with `./run_regression.sh 07`, one practice problem with `./run_regression.sh p03`.
+Practice problems still marked `TODO` never fail the regression; a finished one that gives the wrong output does.
 
 ## Bugs I hit, and what they taught me
 
@@ -91,6 +133,9 @@ linux-cli-for-dv/
 │       ├── setup.sh             creates the input files
 │       ├── solution.sh          the answers
 │       └── golden.log           expected output
+├── practice/
+│   └── pNN_topic/               10 problems without answers: README, setup.sh, solution.sh, golden.log
+├── fresh_start.sh               empties the practice solutions (for your own fork)
 ├── challenges/uvm_log_triage/   next problem (unsolved)
 ├── CHEATSHEET.md                organised command notes
 ├── docs/                        PDF versions of the notes and exercises

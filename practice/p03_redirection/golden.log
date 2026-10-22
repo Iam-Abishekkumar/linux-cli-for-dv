@@ -1,0 +1,25 @@
+## Task 1
+first line
+second line
+third line
+## Task 2
+--- out.txt
+first line
+second line
+third line
+--- err.txt
+cat: missing.txt: No such file or directory
+## Task 3
+first line
+second line
+third line
+## Task 4
+--- all.txt
+first line
+second line
+third line
+cat: missing.txt: No such file or directory
+## Task 5
+3 notes.txt
+--- count.txt
+3 notes.txt

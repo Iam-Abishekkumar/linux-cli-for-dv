@@ -1,0 +1,15 @@
+## Task 1
+project/src/main.c
+project/src/util.c
+## Task 2
+project/build/main.o
+project/build/util.o
+project/src/config.h
+## Task 3
+project/build
+project/docs
+project/src
+## Task 4
+2
+## Task 5
+0
