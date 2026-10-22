@@ -46,11 +46,11 @@ Each folder has the problem, the commands, their real output and a short **debug
 
 ## Practice problems: no answers, solve them yourself
 
-<!-- practice-progress -->**Practice: 0 / 10 solved**<!-- /practice-progress -->
+<!-- practice-progress -->**Practice: 1 / 10 solved**<!-- /practice-progress -->
 
 | # | Problem | Commands | Level | Status |
 |---|---|---|---|---|
-| p01 | [grep: beyond the basics](practice/p01_grep_more/) | `grep` `cut` | Easy | ⬜ to do |
+| p01 | [grep: beyond the basics](practice/p01_grep_more/) | `grep` `cut` | Easy | ✅ solved |
 | p02 | [head and tail: slicing a file](practice/p02_head_tail/) | `head` `tail` | Easy | ⬜ to do |
 | p03 | [Redirection and tee](practice/p03_redirection/) | `>` `>>` `2>` `tee` | Easy | ⬜ to do |
 | p04 | [tr and wc: changing characters](practice/p04_tr_wc/) | `tr` `wc` | Easy | ⬜ to do |
