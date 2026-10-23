@@ -46,14 +46,14 @@ Each folder has the problem, the commands, their real output and a short **debug
 
 ## Practice problems: no answers, solve them yourself
 
-<!-- practice-progress -->**Practice: 2 / 10 solved**<!-- /practice-progress -->
+<!-- practice-progress -->**Practice: 3 / 10 solved**<!-- /practice-progress -->
 
 | # | Problem | Commands | Level | Status |
 |---|---|---|---|---|
 | p01 | [grep: beyond the basics](practice/p01_grep_more/) | `grep` `cut` | Easy | ✅ solved |
 | p02 | [head and tail: slicing a file](practice/p02_head_tail/) | `head` `tail` | Easy | ⬜ to do |
 | p03 | [Redirection and tee](practice/p03_redirection/) | `>` `>>` `2>` `tee` | Easy | ✅ solved |
-| p04 | [tr and wc: changing characters](practice/p04_tr_wc/) | `tr` `wc` | Easy | ⬜ to do |
+| p04 | [tr and wc: changing characters](practice/p04_tr_wc/) | `tr` `wc` | Easy | ✅ solved |
 | p05 | [CSV data: cut, sort and uniq](practice/p05_csv/) | `tail` `cut` `sort` `uniq` `awk` | Medium | ⬜ to do |
 | p06 | [sed: cleaning up a config file](practice/p06_sed_config/) | `sed` `grep` `wc` | Medium | ⬜ to do |
 | p07 | [awk: totals per group](practice/p07_awk_totals/) | `awk` `sort` `head` | Medium | ⬜ to do |
